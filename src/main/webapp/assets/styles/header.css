@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", serif;
+}
+
+.cabecalho{
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+}
+
+.logo{
+	height: 75px;
+}
+
+.caixa{
+	margin-right: 4rem;
+}
+
+.link{
+	margin-left: 1rem;
+	color: #000;
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: 700;
+}

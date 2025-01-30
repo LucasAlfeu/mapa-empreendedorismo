@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#corpo{
+	display: flex;
+	flex-direction: row;
+}
+
+#btn-menu {
+	position: absolute;
+	top: 85px;
+	left: 15px;
+	z-index: 1000;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	background-image: url("../images/botao-de-menu.png");
+	background-size: 25px;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.aba-filtro{
+	position: absolute;
+	top: 75px;
+	right: 0;
+	z-index: 10000;
+	width: 17vw;
+	height: auto;
+	color: white;
+	font-size: 16px;
+	background-color: #0f3b8c;
+	padding-bottom: .5rem;
+	display: none;
+}
+
+.filtro-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	border-bottom: 1px solid #fff;
+}
+
+#btn-close{
+	background: transparent;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	widows: 30px;
+	height: 30px;
+	font-weight: bold;
+}
+
+.form-filtro{
+	margin: 1rem 0 1rem .65rem; 
+	display: flex;
+	flex-direction: column;
+}
+
+.encapsular{
+	display: flex;
+	flex-direction: column;
+}
+
+#nome-estabeleciemnto, #cidade-estabeleciemnto{
+	margin-top: .3rem;
+	width: 15vw;
+}
+
+.ator-title{
+	text-align: left;
+}
+
+.separar{
+	display: flex;
+	align-items: center;
+}
+
+.form-checkbox{
+	width: 16px;
+	height: 16px;
+}
+
+#fechar-filtro{
+	background: #1C3159;
+	color: #fff;
+	border: none;
+	padding: 0.3rem 0.5rem;
+	font-size: 1.1rem;
+	cursor: pointer;
+	margin-top: 1rem;
+	margin-right: .5rem;
+	border-radius: 10px;
+	transition: background-color 0.2s;
+}
+
+#fechar-filtro:hover {
+	background-color: #D2E2FF;
+	color: #000;
+}
+
+.open{
+	display: block;
+}
