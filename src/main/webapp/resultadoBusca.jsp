@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./assets/styles/resultadoBusca.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Empreendimentos</title>
+	   <link rel="icon" href="./assets/images/rural_logo03.png">
+    <title>Resultados da Buca</title>
 </head>
 <body>
 	<header class="cabecalho">

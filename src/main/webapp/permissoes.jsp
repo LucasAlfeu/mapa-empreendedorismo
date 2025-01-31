@@ -55,6 +55,7 @@
                     <th>Matrícula</th>
                     <th class="checkbox-column">Administrador(a)</th>
                     <th class="checkbox-column">Assistente</th>
+                    <th class="checkbox-column">Ator Responsável</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,54 +64,144 @@
                     <td>20194827394</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option selected>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Lucas Andrade Melo</td>
                     <td>20205631842</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option selected>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Fernanda Sousa Araújo</td>
                     <td>20219074521</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option selected>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Gustavo Pereira Lima</td>
                     <td>20223186540</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option selected>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Renato Nogueira Fonseca</td>
                     <td>20231764925</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option selected>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mariana Barbosa Costa</td>
                     <td>20242596376</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option selected>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Juliana Ramos Teixeira</td>
                     <td>20196704832</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option selected>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Felipe Cardoso Albuquerque</td>
                     <td>20201485763</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option>Fomento</option>
+                    		<option selected>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Camila Rocha Figueiredo</td>
                     <td>20212390481</td>
                     <td class="checkbox-column"><input type="checkbox"></td>
                     <td class="checkbox-column"><input type="checkbox"></td>
+                    <td>
+                    	<select>
+                    		<option selected>Fomento</option>
+                    		<option>Institucional</option>
+                    		<option>Empresarial</option>
+                    		<option>Habitats de Inovação</option>
+                    		<option>Conhecimento</option>
+                    		<option>Público</option>
+                    	</select>
+                    </td>
                 </tr>
             </tbody>
         </table>
