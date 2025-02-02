@@ -37,10 +37,10 @@
 			</div>
 			<ul id="lista-menu">
 	    		<li class="item-menu"><button id="filtro" onclick="filtroOpen()"><i class="fas fa-filter"></i> Filtrar Empreendimentos</button>
-	    		<li class="item-menu"><i class="fas fa-tv"> </i><a class="link-menu" href="#"> Sujerir Estabelecimento</a>
+	    		<li class="item-menu"><i class="fas fa-tv"> </i><a class="link-menu" href="./sujerirEmpreendimento.jsp"> Sujerir Estabelecimento</a>
 	    		<li class="item-menu"><i class="fas fa-magnifying-glass-location"> </i><a class="link-menu" href="./buscarEmpreendimento.jsp"> Buscar Empreendimento</a>
 	    		<li class="item-menu"><i class="fas fa-address-book"></i><a class="link-menu" href="#"> Cadastrar Estabelecimento</a>
-	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="#"> Painel de Sujestão</a>
+	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de Sujestão</a>
 	    		<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> Permissões</a>
 	    	</ul>
 		</div>

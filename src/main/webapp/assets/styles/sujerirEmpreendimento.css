@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Inter, sans-serif;
+}
+
+body {
+	background-color: #f5f5f5;
+	padding: 20px;
+}
+
+.form-container {
+	max-width: 800px;
+	margin: 3rem auto;
+	background-color: #0F3B8C;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+	color: white;
+	margin-bottom: 25px;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	color: white;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 0.2rem 0.3rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 17px;
+}
+        
+#nome{
+	width: 25rem;
+}
+        
+#cep, #numero, #telefone{
+	width: 10rem;
+}
+        
+#rua, #complemento, #bairro, #municipio, #site, #email{
+	width: 20rem;
+}
+
+textarea {
+	height: 120px;
+	resize: vertical;
+}
+        
+.form-button{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2rem;
+}
+
+button {
+	background-color: #002266;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin: 1.5rem 0;
+	display: block;
+	font-size: 1.25rem;
+}
+
+button:hover {
+	background-color: #001a4d;
+}
