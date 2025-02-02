@@ -25,35 +25,35 @@
             <ul class="suggestions-list">
                 <li>
                     <span>Estabelecimento 01</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 02</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 03</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 04</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 05</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 06</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 07</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
                 <li>
                     <span>Estabelecimento 08</span>
-                    <a class="link-sujestoes" href="#">Saiba Mais</a>
+                    <a class="link-sujestoes" href="./saibaMais.jsp">Saiba Mais</a>
                 </li>
             </ul>
         </div>
