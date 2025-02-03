@@ -41,6 +41,7 @@
 	    		<li class="item-menu"><i class="fas fa-magnifying-glass-location"> </i><a class="link-menu" href="./buscarEmpreendimento.jsp"> Buscar Empreendimento</a>
 	    		<li class="item-menu"><i class="fas fa-address-book"></i><a class="link-menu" href="./cadastrarEmpreendimento.jsp"> Cadastrar Estabelecimento</a>
 	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de Sujestão</a>
+	    		<li class="item-menu"><i class="fas fa-object-group"></i><a class="link-menu" href="./atualizar.jsp"> Novo(a) Ator/Categoria</a>
 	    		<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> Permissões</a>
 	    	</ul>
 		</div>
