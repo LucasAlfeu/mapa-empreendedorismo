@@ -92,6 +92,6 @@
     	<div id="map"></div>
     </section>
 </body>
-<script type="text/javascript" src="./assets/scripts/mapa.js"></script>
+<script type="text/javascript" src="./assets/scripts/mapaLogin.js"></script>
 <script type="text/javascript" src="./assets/scripts/abrirFechar.js"></script>
 </html>
