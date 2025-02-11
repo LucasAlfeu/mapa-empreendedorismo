@@ -8,14 +8,10 @@ CREATE TABLE Usuario (
     nome VARCHAR(100) NOT NULL,
     usuario VARCHAR(50) UNIQUE NOT NULL,
     senha VARCHAR(100) NOT NULL,
-    cargo VARCHAR(50),
-    identificacao VARCHAR(50),
-    curso VARCHAR(100),
-    Usuario_TIPO INT NOT NULL,
-    fk_Ator_idAtor INT NOT NULL,
-    fk_Usuario_idUsuario INT,
-    FOREIGN KEY (fk_Ator_idAtor) REFERENCES Ator(idAtor),
-    FOREIGN KEY (fk_Usuario_idUsuario) REFERENCES Usuario(idUsuario)
+    cargo VARCHAR(20),
+    identificacao VARCHAR(15),
+    tipo VARCHAR NOT NULL,
+    curso VARCHAR(100)
 );
 
 -- Tabela Ator
@@ -32,20 +28,29 @@ CREATE TABLE Categoria (
     FOREIGN KEY (fk_Ator_idAtor) REFERENCES Ator(idAtor)
 );
 
--- Tabela Empreendimento
-CREATE TABLE Empreendimento (
-    idEmpreendimento INT PRIMARY KEY AUTO_INCREMENT,
+-- Tabela Sugestao
+CREATE TABLE Sugestao (
+    idSugestao INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     descricao TEXT,
     telefone VARCHAR(20),
     email VARCHAR(100),
     site VARCHAR(255),
     verificado BOOLEAN DEFAULT FALSE,
-    ultimaAtualizacao DATETIME,
+    fk_Usuario_idUsuario INT NOT NULL,
+    FOREIGN KEY (fk_Usuario_idUsuario) REFERENCES Usuario(idUsuario)
+);
+
+-- Tabela Empreendimento
+CREATE TABLE Empreendimento (
+    idEmpreendimento INT PRIMARY KEY AUTO_INCREMENT,
+    ultimaAtualizacao VARCHAR(15),
     fk_Categoria_idCategoria INT NOT NULL,
     fk_Ator_idAtor INT NOT NULL,
+    fk_Sugestao_idSugestao INT NOT NULL,
     FOREIGN KEY (fk_Categoria_idCategoria) REFERENCES Categoria(idCategoria),
-    FOREIGN KEY (fk_Ator_idAtor) REFERENCES Ator(idAtor)
+    FOREIGN KEY (fk_Ator_idAtor) REFERENCES Ator(idAtor),
+    FOREIGN KEY (fk_Sugestao_idSugestao) REFERENCES Sugestao(idSugestao)
 );
 
 -- Tabela Endereco
@@ -60,17 +65,17 @@ CREATE TABLE Endereco (
     numero VARCHAR(10),
     enderecoCompleto VARCHAR(255),
     logradouro VARCHAR(255),
-    fk_Empreendimento_idEmpreendimento INT NOT NULL,
-    FOREIGN KEY (fk_Empreendimento_idEmpreendimento) REFERENCES Empreendimento(idEmpreendimento)
+    fk_Sugestao_idSugestao INT NOT NULL,
+    FOREIGN KEY (fk_Sugestao_idSugestao) REFERENCES Sugestao(idSugestao)
 );
 
--- Tabela Sugere (Relacionamento entre Usuario e Empreendimento)
-CREATE TABLE Sugere (
+-- Tabela eh_responsavel (Relacionamento entre Ator e Usuario)
+CREATE TABLE eh_responsavel (
+    fk_Ator_idAtor INT NOT NULL,
     fk_Usuario_idUsuario INT NOT NULL,
-    fk_Empreendimento_idEmpreendimento INT NOT NULL,
-    PRIMARY KEY (fk_Usuario_idUsuario, fk_Empreendimento_idEmpreendimento),
-    FOREIGN KEY (fk_Usuario_idUsuario) REFERENCES Usuario(idUsuario),
-    FOREIGN KEY (fk_Empreendimento_idEmpreendimento) REFERENCES Empreendimento(idEmpreendimento)
+    PRIMARY KEY (fk_Ator_idAtor, fk_Usuario_idUsuario),
+    FOREIGN KEY (fk_Ator_idAtor) REFERENCES Ator(idAtor),
+    FOREIGN KEY (fk_Usuario_idUsuario) REFERENCES Usuario(idUsuario)
 );
 
 -- Criar os index para facilitar a busca
