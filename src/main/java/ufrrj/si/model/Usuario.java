@@ -9,7 +9,28 @@ public class Usuario {
 	private String identificacao;
 	private String tipo;
 	private String curso;
+	private String email;
 	
+	public Usuario(){
+		
+	}
+	public Usuario(String nome, String usuario, String senha, String cargo, String identificacao, String tipo,
+			String curso, String email) {
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.cargo = cargo;
+		this.identificacao = identificacao;
+		this.tipo = tipo;
+		this.curso = curso;
+		this.email = email;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public int getIdUsuario() {
 		return idUsuario;
 	}

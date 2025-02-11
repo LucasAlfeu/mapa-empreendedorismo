@@ -25,44 +25,44 @@
 		</div>
 	</header>
 	<section id="corpo">
-		<form id="form-cadastrar">
+		<form id="form-cadastrar" method="POST" action="entrar.do">
 			<h1 class="form-title">Cadastrar</h1>
 			<div class="box separar">
 				<label class="form-label" for="tipo-usuario">Informe seu vínculo com a UFRRJ:</label>
-	    		<select id="tipo-usuario" class="form-input">
+	    		<select id="tipo-usuario" class="form-input" name="tipo-usuario">
 	    			<option class="item-usuario form-input" value="">Selecione...</option>
-	    			<option class="item-usuario form-input">Docente</option>
-	    			<option class="item-usuario form-input">Discente</option>
-	    			<option class="item-usuario form-input">Cidadão</option>
+	    			<option class="item-usuario form-input" value="docente">Docente</option>
+	    			<option class="item-usuario form-input" value="discente">Discente</option>
+	    			<option class="item-usuario form-input" value="cidadao">Cidadão</option>
 	    		</select>
 			</div>
 			<div class="box">
 				<label class="form-label" for="nome">Nome Completo: </label>
-	    		<input type="text" id="nome" class="form-input">
+	    		<input type="text" id="nome" class="form-input" name="nome-usuario">
 			</div>
 			<div class="box">
 				<label class="form-label" for="curso">Curso: </label>
-	    		<input type="text" id="curso" class="form-input">	 
+	    		<input type="text" id="curso" class="form-input" name="curso-usuario">	 
 			</div>
 			<div class="box">
 				<label class="form-label" for="identificacao" id="label-id">Identificação: </label>
-	    		<input type="text" id="identificacao" onfocus="alerta()" class="form-input">	 
+	    		<input type="text" id="identificacao"  class="form-input" name="identificacao-usuario">	  <!-- onfocus="alerta()" -->
 			</div>
 			<div class="box">
 				<label class="form-label" for="email">Email: </label>
-	    		<input type="text" id="email" class="form-input">	 
+	    		<input type="text" id="email" class="form-input" name="email-usuario">	 
 			</div>
 			<div class="box">
 				<label class="form-label" for="usuario">Usuario: </label>
-	    		<input type="text" id="usuario" class="form-input">	 
+	    		<input type="text" id="usuario" class="form-input"  name="usuario">	 
 			</div>
 			<div class="box">
 				<label class="form-label" for="senha">Senha: </label>
-	    		<input type="password" id="senha" class="form-input">	 
+	    		<input type="password" id="senha" class="form-input" name="senha-usuario">	 
 			</div>
 			<div class="box">
 				<label class="form-label" for="confirmaSenha">Confirmar Senha: </label>
-	    		<input type="password" id="confirmaSenha" class="form-input">	 
+	    		<input type="password" id="confirmaSenha" class="form-input" name="confirma-senha">	 
 			</div>
 	    	<div class="btns">
 	    		<input type="submit" value="Cadastrar" id="btn-cadastrar">
