@@ -78,4 +78,11 @@ CREATE TABLE eh_responsavel (
     FOREIGN KEY (fk_Usuario_idUsuario) REFERENCES Usuario(idUsuario)
 );
 
--- Criar os index para facilitar a busca
+-- Index para a busca de usuarios
+CREATE INDEX INDEX_USUARIO ON Usuario (usuario);
+
+-- Index para a busca nome de empreendimentos
+CREATE INDEX INDEX_NOMEESTABELECIMENTO ON Sugestao (nome);
+
+--Index para a busca
+CREATE INDEX INDEX_CIDADE ON Endereco (municipio);
