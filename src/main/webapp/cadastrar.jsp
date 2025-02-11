@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,15 +27,15 @@
 		</div>
 	</header>
 	<section id="corpo">
-		<form id="form-cadastrar" method="POST" action="entrar.do">
+		<form id="form-cadastrar" method="POST" action="cadastrar.do">
 			<h1 class="form-title">Cadastrar</h1>
 			<div class="box separar">
-				<label class="form-label" for="tipo-usuario">Informe seu vÌnculo com a UFRRJ:</label>
+				<label class="form-label" for="tipo-usuario">Informe seu v√≠nculo com a UFRRJ:</label>
 	    		<select id="tipo-usuario" class="form-input" name="tipo-usuario">
 	    			<option class="item-usuario form-input" value="">Selecione...</option>
 	    			<option class="item-usuario form-input" value="docente">Docente</option>
 	    			<option class="item-usuario form-input" value="discente">Discente</option>
-	    			<option class="item-usuario form-input" value="cidadao">Cidad„o</option>
+	    			<option class="item-usuario form-input" value="cidadao">Cidad√£o</option>
 	    		</select>
 			</div>
 			<div class="box">
@@ -45,7 +47,7 @@
 	    		<input type="text" id="curso" class="form-input" name="curso-usuario">	 
 			</div>
 			<div class="box">
-				<label class="form-label" for="identificacao" id="label-id">IdentificaÁ„o: </label>
+				<label class="form-label" for="identificacao" id="label-id">Identifica√ß√£o: </label>
 	    		<input type="text" id="identificacao"  class="form-input" name="identificacao-usuario">	  <!-- onfocus="alerta()" -->
 			</div>
 			<div class="box">

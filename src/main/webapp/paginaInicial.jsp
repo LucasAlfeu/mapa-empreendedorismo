@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import="ufrrj.si.model.Usuario" %>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,10 +24,11 @@
 
 </head>
 <body>
+	<%Usuario usuario = (Usuario) session.getAttribute("user");%>
 	<header class="cabecalho">
 		<img class="logo" alt="" src="./assets/images/rural_logo04.png">
 		<div class="caixa">
-			<a class="link" href="#">Bem vindo(a), nome do usuario</a>
+			<a class="link" href="#"><%= usuario.getNome() %></a>
 			<a class="link" href="./index.jsp">Sair</a>
 		</div>
 	</header>
@@ -40,9 +44,9 @@
 	    		<li class="item-menu"><i class="fas fa-tv"> </i><a class="link-menu" href="./sujerirEmpreendimento.jsp"> Sujerir Estabelecimento</a>
 	    		<li class="item-menu"><i class="fas fa-magnifying-glass-location"> </i><a class="link-menu" href="./buscarEmpreendimento.jsp"> Buscar Empreendimento</a>
 	    		<li class="item-menu"><i class="fas fa-address-book"></i><a class="link-menu" href="./cadastrarEmpreendimento.jsp"> Cadastrar Estabelecimento</a>
-	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de Sujestão</a>
+	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de SujestÃ£o</a>
 	    		<li class="item-menu"><i class="fas fa-object-group"></i><a class="link-menu" href="./atualizar.jsp"> Novo(a) Ator/Categoria</a>
-	    		<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> Permissões</a>
+	    		<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> PermissÃµes</a>
 	    	</ul>
 		</div>
 		<section class="aba-filtro">
@@ -75,7 +79,7 @@
 					</div>
 					<div class="separar">
 			    		<input type="checkbox" id="" class="form-checkbox">	 
-						<label class="form-label" for="">Habitatis de Inovação </label>
+						<label class="form-label" for="">Habitatis de InovaÃ§Ã£o </label>
 					</div>
 					<div class="separar">
 			    		<input type="checkbox" id="" class="form-checkbox">	 
@@ -83,7 +87,7 @@
 					</div>
 					<div class="separar">
 			    		<input type="checkbox" id="" class="form-checkbox">	 
-						<label class="form-label" for="">Público </label>
+						<label class="form-label" for="">PÃºblico </label>
 					</div>
 				</div>
 				<input type="submit" id="fechar-filtro" value="Aplicar Filtro">

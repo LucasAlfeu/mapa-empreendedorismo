@@ -1,6 +1,7 @@
 package ufrrj.si.DAO;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import ufrrj.si.conexao.Conexao;
@@ -24,8 +25,40 @@ public class UsuarioDAO {
 			
 			ps.execute();
 		} catch (SQLException e) {
-            System.out.println("Erro ao cadastrar carona: " + e.getMessage());
+            System.out.println("Erro ao cadastrar usuario: " + e.getMessage());
             e.printStackTrace();
 		}
+	}
+	
+	public Usuario buscarUsuario(String usuario, String senha) throws ClassNotFoundException {
+		
+		String sql = "SELECT * FROM Usuario WHERE usuario = ? AND senha = ?";
+		
+		try {
+			PreparedStatement ps = Conexao.getConexao().prepareStatement(sql);
+			ps.setString(1, usuario);
+			ps.setString(2, senha);
+			
+			ResultSet rs = ps.executeQuery();
+			Usuario u = new Usuario();
+			
+			rs.next();
+			u.setIdUsuario(rs.getInt("idUsuario"));
+			u.setNome(rs.getString("nome"));
+			u.setUsuario(rs.getString("usuario"));
+			u.setSenha(rs.getString("senha"));
+			u.setCargo(rs.getString("cargo"));
+			u.setIdentificacao(rs.getString("identificacao"));
+			u.setTipo(rs.getString("tipo"));
+			u.setCurso(rs.getString("curso"));
+			
+			return u;
+			
+		} catch (SQLException e) {
+            System.out.println("Erro ao buscar usuario: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+		}
+		
 	}
 }

@@ -79,7 +79,7 @@ CREATE TABLE eh_responsavel (
 );
 
 -- Index para a busca de usuarios
-CREATE INDEX INDEX_USUARIO ON Usuario (usuario);
+CREATE INDEX INDEX_USUARIO ON Usuario (usuario, senha);
 
 -- Index para a busca nome de empreendimentos
 CREATE INDEX INDEX_NOMEESTABELECIMENTO ON Sugestao (nome);

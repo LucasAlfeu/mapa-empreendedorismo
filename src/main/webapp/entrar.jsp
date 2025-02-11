@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -26,16 +28,16 @@
 		</div>
 	</header>
 	<section id="corpo">
-		<form id="form-entrar">
+		<form id="form-entrar" method="POST" action="entrar.do">
 			<h1 class="form-title">Entrar</h1>
 			<div class="box">
 				<label class="form-label" for="usuario">Usuario: </label>
-	    		<input type="text" id="usuario" class="form-input">
+	    		<input type="text" id="usuario" class="form-input" name="usuario">
 			</div>
 	    	</br>
 			<div class="box">
 				<label class="form-label" for="senha">Senha: </label>
-	    		<input type="password" id="senha" class="form-input">	 
+	    		<input type="password" id="senha" class="form-input" name="senha">	 
 			</div>
 	    	<div class="btns">
 	    		<input type="submit" value="Entrar" id="btn-entrar">
