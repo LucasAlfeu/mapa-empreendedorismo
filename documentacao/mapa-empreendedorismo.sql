@@ -10,7 +10,7 @@ CREATE TABLE Usuario (
     senha VARCHAR(100) NOT NULL,
     cargo VARCHAR(20),
     identificacao VARCHAR(15),
-    tipo VARCHAR NOT NULL,
+    tipo VARCHAR(15) NOT NULL,
     curso VARCHAR(100)
 );
 
@@ -80,6 +80,9 @@ CREATE TABLE eh_responsavel (
 
 -- Index para a busca de usuarios
 CREATE INDEX INDEX_USUARIO ON Usuario (usuario, senha);
+
+-- Index para buscar discentes
+CREATE INDEX INDEX_DISCENTE ON Usuario (tipo);
 
 -- Index para a busca nome de empreendimentos
 CREATE INDEX INDEX_NOMEESTABELECIMENTO ON Sugestao (nome);

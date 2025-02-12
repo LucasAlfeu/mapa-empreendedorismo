@@ -3,6 +3,8 @@ package ufrrj.si.DAO;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import ufrrj.si.conexao.Conexao;
 import ufrrj.si.model.Usuario;
@@ -60,5 +62,35 @@ public class UsuarioDAO {
             return null;
 		}
 		
+	}
+	
+	public List<Usuario> buscarDiscentesDocentes() throws ClassNotFoundException{
+		String sql = "SELECT * FROM Usuario WHERE tipo = ? OR tipo = ?";
+		
+		try {
+			PreparedStatement ps = Conexao.getConexao().prepareStatement(sql);
+			ps.setString(1, "discente");
+			ps.setString(2, "docente");
+			ResultSet rs = ps.executeQuery();
+			List<Usuario> usuarios = new ArrayList<>();
+			while(rs.next()) {
+				Usuario u = new Usuario();
+				
+				u.setIdUsuario(rs.getInt("idUsuario"));
+				u.setNome(rs.getString("nome"));
+				u.setUsuario(rs.getString("usuario"));
+				u.setSenha(rs.getString("senha"));
+				u.setCargo(rs.getString("cargo"));
+				u.setIdentificacao(rs.getString("identificacao"));
+				u.setTipo(rs.getString("tipo"));
+				u.setCurso(rs.getString("curso"));
+				
+				usuarios.add(u);
+			}
+			return usuarios;
+		} catch (SQLException e) {
+            System.out.println("Erro ao buscar discentes e docentes: " + e.getMessage());
+            return null;
+        }
 	}
 }
