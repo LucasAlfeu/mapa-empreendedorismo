@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ page import="ufrrj.si.model.Usuario" %>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -42,11 +43,17 @@
 			<ul id="lista-menu">
 	    		<li class="item-menu"><button id="filtro" onclick="filtroOpen()"><i class="fas fa-filter"></i> Filtrar Empreendimentos</button>
 	    		<li class="item-menu"><i class="fas fa-tv"> </i><a class="link-menu" href="./sujerirEmpreendimento.jsp"> Sujerir Estabelecimento</a>
-	    		<li class="item-menu"><i class="fas fa-magnifying-glass-location"> </i><a class="link-menu" href="./buscarEmpreendimento.jsp"> Buscar Empreendimento</a>
-	    		<li class="item-menu"><i class="fas fa-address-book"></i><a class="link-menu" href="./cadastrarEmpreendimento.jsp"> Cadastrar Estabelecimento</a>
-	    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de Sujestão</a>
-	    		<li class="item-menu"><i class="fas fa-object-group"></i><a class="link-menu" href="./atualizar.jsp"> Novo(a) Ator/Categoria</a>
-	    		<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> Permissões</a>
+	    		<% if(usuario.getCargo() != null && (usuario.getCargo().equals("administrador") || usuario.getCargo().equals("auxiliar"))){ %>
+
+		    		<li class="item-menu"><i class="fas fa-magnifying-glass-location"> </i><a class="link-menu" href="./buscarEmpreendimento.jsp"> Buscar Empreendimento</a>
+		    		<li class="item-menu"><i class="fas fa-address-book"></i><a class="link-menu" href="./cadastrarEmpreendimento.jsp"> Cadastrar Estabelecimento</a>
+		    		<li class="item-menu"><i class="fas fa-folder"></i><a class="link-menu" href="./sujestoes.jsp"> Painel de Sujestão</a>
+		    		<li class="item-menu"><i class="fas fa-object-group"></i><a class="link-menu" href="./atualizar.jsp"> Novo(a) Ator/Categoria</a>
+		    		
+		    	<% }%>
+	    		<% if(usuario.getCargo() != null && usuario.getCargo().equals("administrador") ){ %>
+	    			<li class="item-menu"><i class="fas fa-cogs"></i><a class="link-menu" href="./permissoes.jsp"> Permissões</a>
+	    		<% }%>
 	    	</ul>
 		</div>
 		<section class="aba-filtro">
